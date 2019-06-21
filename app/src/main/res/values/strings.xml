@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Fast Market</string>
+    <string name="titulo">Registry</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="edad">Edad</string>
+    <string name="celular">Celular</string>
+    <string name="correo">Correo</string>
+    <string name="Aceptar">Aceptar</string>
+    <string name="titulo2">Datos</string>
+
+
 </resources>
