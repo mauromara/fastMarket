@@ -1,20 +1,20 @@
-package co.com.entrenatuoido.controlador;
+package co.com.fastmarket.controlador;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import co.com.entrenatuoido.R;
+import co.com.fastmarket.R;
+import co.com.fastmarket.controlador.Product.ProductActivity;
 
 public class BaseActivity extends AppCompatActivity {
 
@@ -41,7 +41,7 @@ public class BaseActivity extends AppCompatActivity {
     public void setContentView(int layoutResID) {
         super.setContentView(layoutResID);
         ButterKnife.bind(this);
-        inicializador();
+        init();
     }
 
     @Override
@@ -57,7 +57,7 @@ public class BaseActivity extends AppCompatActivity {
     /**
      * Método que inicializa toda la activity
      */
-    private void inicializador() {
+    private void init() {
         inicializarToolbar();
         if (navigationView != null) {
             View headerView = navigationView.getHeaderView(0);
@@ -84,7 +84,12 @@ public class BaseActivity extends AppCompatActivity {
                     Intent intent = null;
                     if (menuItem.getItemId() == R.id.menu_inicio) {
                         intent = new Intent(BaseActivity.this
-                                , PrincipalActivity.class);
+                                , ProductActivity.class);
+                    }
+
+                    if (menuItem.getItemId() == R.id.menu_list_order) {
+                        intent = new Intent(BaseActivity.this
+                                , ListOrderActivity.class);
                     }
 
                     if (intent != null) {

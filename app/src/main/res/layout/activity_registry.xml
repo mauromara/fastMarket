@@ -1,9 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primary"
     tools:context=".controlador.RegistryActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="40dp"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/ivRegLogo"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="TODO"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_assignment_white_24dp" />
+
+            <EditText
+                android:id="@+id/user_name_et"
+                style="@style/Font_family_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_right_16"
+                android:layout_marginTop="@dimen/margin_top_8"
+                android:layout_marginRight="@dimen/margin_right_16"
+                android:layout_marginBottom="@dimen/margin_top_8"
+                android:background="@drawable/edit_style"
+                android:drawableStart="@drawable/ic_person_outline_black_24dp"
+                android:drawablePadding="@dimen/padding_16"
+                android:hint="Usuario"
+                android:inputType="text"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:padding="@dimen/padding_16"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/text_20" />
+
+
+            <EditText
+                android:id="@+id/user_email_et"
+                style="@style/Font_family_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_right_16"
+                android:layout_marginTop="@dimen/margin_top_8"
+                android:layout_marginRight="@dimen/margin_right_16"
+                android:layout_marginBottom="@dimen/margin_top_8"
+                android:background="@drawable/edit_style"
+                android:drawableStart="@drawable/ic_email_black_24dp"
+                android:drawablePadding="@dimen/padding_16"
+                android:hint="Correo"
+                android:inputType="text"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:padding="@dimen/padding_16"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/text_20" />
+
+            <EditText
+                android:id="@+id/reg_password_et"
+                style="@style/Font_family_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_right_16"
+                android:layout_marginTop="@dimen/margin_top_8"
+                android:layout_marginRight="@dimen/margin_right_16"
+                android:layout_marginBottom="@dimen/margin_top_8"
+                android:background="@drawable/edit_style"
+                android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                android:drawablePadding="@dimen/padding_16"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="@dimen/padding_16"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/text_20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="Perfil"
+                android:textSize="24sp"/>
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnRegistry"
+                style="@style/Font_family_regular"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_right_16"
+                android:background="@drawable/btn_login"
+                android:text="Registrar"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

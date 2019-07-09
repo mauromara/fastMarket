@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Fast Market</string>
+    <string name="usuario_obligatorio">Ingrese Usuario o Contraseña.</string>
+    <string name="atencion">Atención</string>
+    <string name="usuario_registrado">Usuario registrado con éxito.</string>
+    <string name="usuario_existente">Usuario ya existe.</string>
+    <string name="usuario_incorrecto">Usuario o contraseña no coinciden.</string>
+    <string name="menu_inicio">Inicio</string>
+    <string name="product_name">Productos</string>
+    <string name="product_detail">Detalle Productos</string>
+    <string name="compra_seguro">Está seguro de comprar este producto?</string>
+    <string name="lista_compra">Lista compra</string>
 </resources>

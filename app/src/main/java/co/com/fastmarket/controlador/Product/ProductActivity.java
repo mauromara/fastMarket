@@ -1,12 +1,12 @@
-package co.com.fastmarket.controlador;
+package co.com.fastmarket.controlador.Product;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 
 import butterknife.BindView;
 import co.com.fastmarket.R;
+import co.com.fastmarket.controlador.BaseActivity;
 
 public class ProductActivity extends BaseActivity {
 

@@ -5,5 +5,10 @@
             android:id="@+id/menu_inicio"
             android:icon="@drawable/ic_home_gray"
             android:title="@string/menu_inicio" />
+
+        <item
+            android:id="@+id/menu_list_order"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:title="@string/lista_compra" />
     </group>
 </menu>

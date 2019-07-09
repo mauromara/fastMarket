@@ -6,17 +6,16 @@ import co.com.fastmarket.bdHelper.BdHelper;
 import co.com.fastmarket.modelo.User;
 
 /**
- * Clase manager para la interacción con la BD de la clase Role
+ * Clase manager para la interacción con la BD de la clase Usuario
  */
-public class RoleManager extends CrudManager<User, Integer> {
-
+public class UserManager extends CrudManager<User, Integer> {
     /**
      * Constructor
      *
      * @param helper
      * @throws SQLException
      */
-    public RoleManager(BdHelper helper) throws SQLException {
+    public UserManager(BdHelper helper) throws SQLException {
         super(helper, User.class);
     }
 }

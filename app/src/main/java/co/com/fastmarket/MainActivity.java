@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private boolean validatePerms() {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
+
             return true;
         }
         for (String permission : INIT_PERMS) {

@@ -1,8 +1,8 @@
-package com.cmconsultores.paebogota.Controlador.CarguePde;
+package co.com.fastmarket.controlador.Product;
 
-import com.cmconsultores.paebogota.Modelo.Ruta.RutaCargue;
-import com.cmconsultores.paebogota.Modelo.RutaEntrega;
+
+import co.com.fastmarket.modelo.Product;
 
 public interface OnItemClickListener {
-    void onItemClick(RutaCargue item);
+    void onItemClick(Product item);
 }
